@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no,viewport-fit=cover" />
+		<title></title>
+		<style>
+			body{
+				max-width: 425px;
+				height:auto;
+				margin: 0;
+				padding: 0;
+				font-size: .28rem;
+				color: #fff;
+			}	
+			input{
+				margin: 0;
+				padding: 0;
+				padding-left: .2rem;
+				box-sizing: border-box;
+			}
+			
+		</style>
+		<link rel="stylesheet" href="./css/index.css"/>
+		<script src="./js/jquery-2.1.0.js"></script>
+		<!--<script src='./js/index.js'></script>-->
+	</head>
+	<body>
+		<div class='container'>
+			<div class='header'></div>
+			<div class='wrap'>
+				<div class='swiper'>
+					
+					<div class="banner">
+						<i class='icon_left'></i>
+						<img class='banner_img' src="img/banner.png"/>
+						<i class='icon_right'></i>
+					</div>
+					
+				</div>
+				<div class='foot'>
+					<input id='phone' type='number' class='input_phone' placeholder="请输入手机号"/>
+					<div class='code_wrap'>
+						<input class='input_code' placeholder="请输入验证码"/>
+						<span id='sendCode' class='code'>发送验证码</span>
+					</div>
+					<div id='appoint' class='send'></div>
+					<div class='word_box'>
+						<div class='list'>
+							<p>1、预约用户均可获得测试邀请码。</p>
+							<p>2、本邀请码仅供参与本次测试使用。</p>
+							<p>3、一个手机号可预约一个邀请码。</p>
+							<p>4、本次为删档测试，测试结束即清除用户数据。</p>
+							<p>5、本次为删档测试，测试结束即清除用户数据。</p>
+							<p>4、参与本次测试的用户，在后续测试中拥有优先体验权。</p>
+							<p>4、参与本次测试的用户，在公测期间会收到我们为您准备的礼包。</p>
+						</div>
+					</div>
+					<p class='copy'>版权: 北京大神圈文化科技有限公司保留在法律规定范围内对上述规则进行解释的权利</p>
+				</div>
+			</div>
+		</div>
+		<div id='modal' class='modal'>
+			<div class='pop'></div>
+		</div>
+		<script src='./js/index.js'></script>
+		<script type='text/javascript'>
+			const fontTool = (bodyMaxWidth, designWidth) => {
+			  document.body.style.maxWidth = `${bodyMaxWidth}px`
+			  if (designWidth) {
+			    const docElement = document.documentElement
+			    let screenWidth = docElement.clientWidth
+			    const htmlElement = document.getElementsByTagName('html')[0]
+			    if (screenWidth > bodyMaxWidth) {
+			      screenWidth = bodyMaxWidth
+			    }
+			    docElement.style.fontSize = `${screenWidth / designWidth * 100}px`
+			    const fz = docElement.style.fontSize.replace('px', '')
+			    const realfz = ~~(+window.getComputedStyle(htmlElement).fontSize.replace('px', '') * 10000) / 10000
+			    if (fz !== realfz) {
+			      htmlElement.style.cssText = `font-size: ${fz * (fz / realfz)}px`
+			    }
+			  }
+			}
+//			const height = document.documentElement.clientHeight
+			const height = window.screen.availHeight
+			console.log(height)
+		fontTool(425, 750)
+		</script>
+	</body>
+</html>

@@ -1,0 +1,135 @@
+.header{
+	height: 13.38rem ;
+	width: 100%;
+	background: url('../img/header.png') no-repeat;
+	background-size: 100% 100%;
+	padding-top: .92rem;
+	
+}
+.swiper{
+	background: url('../img/swiper.png') no-repeat;
+	height: 6.86rem;
+	width: 100%;
+	background-size: 100% 100%;
+	position: relative;
+	margin-top: -1.68rem;
+	padding-top: 2.38rem;
+	z-index: 2;
+	box-sizing: border-box;
+}
+.wrap{
+	/*position: relative;*/
+}
+.foot{
+	background: url('../img/foot.png') no-repeat;
+	background-size: 100% 100%;
+	padding: 1.2rem 0 .67rem;
+	width: 100%;
+    margin-top: -0.6rem;
+    
+    position: relative;
+}
+.banner{
+		height: 3.49rem;
+		width: 100%;
+		display: block;
+		margin: auto;
+		position: relative;
+}
+.banner_img{
+		width: 6.47rem;
+		margin: auto;
+	    left: 50%;
+	    position: absolute;
+	    transform: translate(-50%);
+}
+.container{
+	position: relative;
+}
+.code_wrap{
+	margin: auto;
+	text-align: center;
+}
+.code {
+	display: inline-block;
+	background: #f2c836;
+	width: 1.36rem;
+	height: .6rem;
+	vertical-align: bottom;
+	border-radius: 3px;
+
+	font-size: .26rem;
+	line-height: .6rem;
+}
+.input_phone{
+	display: block;
+	width: 4.6rem;
+	height: .6rem;
+	margin: 0 auto .38rem;
+}
+
+.input_code{
+	width: 3.14rem;
+	height: .6rem;
+}
+.send{
+	width: 3.2rem;
+	height: 1.36rem;
+	background: url('../img/btn.png') no-repeat;
+	background-size: 100% 100%;
+	margin: .36rem auto .72rem;
+}
+.word_box{
+	width: 6.71rem;
+	background: url('../img/box.png') no-repeat;
+	background-size: 100% 100%;
+	margin: auto ;
+	padding: .66rem .52rem;
+    box-sizing: border-box;
+}
+.copy{
+	line-height: .52rem;
+	margin: 0.24rem .52rem 0;
+}
+.icon_left{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background: url('../img/left.png') no-repeat;
+	background-size: 100% 100%;
+	width: .36rem;
+	height: .67rem;
+	left: .15rem;
+	display: inline-block;
+}
+.icon_right{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background: url('../img/right.png') no-repeat;
+	background-size: 100% 100%;
+	width: .36rem;
+	height: .67rem;
+	right: .15rem;
+	display: inline-block;
+}
+.modal{
+	position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: rgba(0,0,0, .7);
+}
+.pop{
+	background: url(../img/succ.png) no-repeat;
+	background-size: 100% 100%;
+	width: 6.71rem;
+	height: 7rem;
+	margin: auto;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
