@@ -37,8 +37,7 @@ $(document).ready(function(){
      		return
      	}
      	return phone
-     }
-    console.log()
+    }
     // 获取验证码
      $('#sendCode').click(()=> {
      	console.log('sendCode')
@@ -66,7 +65,7 @@ $(document).ready(function(){
 		  "mimeType": "multipart/form-data",
 		  "data": formData
 		}
-     	
+     	 $('#sendCode').css('background', '#666')
 		$.ajax(settings).done(function (response) {
 		  console.log(response);
 		});
